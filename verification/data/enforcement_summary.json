@@ -1,0 +1,30 @@
+{
+ "rule": {
+  "rule_id": "COL-PARK-001",
+  "version": 3,
+  "effective_from": "2026-11-01",
+  "statement": "A shared mobility device may not be parked at the end of a trip inside a no-park or no-ride polygon.",
+  "authority": "RFQ033920 scope items 3.4.14 and 3.4.15 establish the prohibition; the City geofencing feed supplies the geometry",
+  "fee": 25.0,
+  "currency": "USD",
+  "cure_window_hours": 2,
+  "fee_and_cure_basis": "DEMONSTRATION ASSUMPTION \u2014 not from an executed agreement",
+  "fee_and_cure_note": "The RFP's functional requirements are not authority for a fine amount or a cure period. Both are placeholders pending the executed City/operator agreement, which supplies the real figures."
+ },
+ "verdicts": {
+  "NOT ENFORCEABLE": 328,
+  "PROVEN, PENDING NOTICE": 76
+ },
+ "failed_elements": {
+  "prohibited_place": 252,
+  "policy_in_force": 178,
+  "notice_and_cure": 404,
+  "parked_not_passing": 1
+ },
+ "trips_assessed": 404,
+ "snapshot": {
+  "capture": "20261115T212644Z",
+  "vehicles": 2896,
+  "inside_restricted": 409
+ }
+}
