@@ -1,0 +1,49 @@
+{
+ "rule": {
+  "rule_id": "EC8",
+  "version": "report-card-2025",
+  "rule_type": "fleet_idle_duration",
+  "statement": "Fewer than 10 percent of vehicles idle beyond 120 hours, averaged over a 30-day window.",
+  "observation_window_days": 30,
+  "idle_threshold_hours": 120,
+  "maximum_fraction_over_threshold": 0.1,
+  "denominator_definition": "requires_contract_confirmation",
+  "source": "City of Columbus SLA Report Cards, May-December 2025",
+  "status": "historical_reported_terms_not_executed_contract",
+  "enforcement_enabled": false
+ },
+ "run_a_synthetic": {
+  "rule": "EC8 (report-card-2025)",
+  "window_start": "2026-10-16T00:00:00+00:00",
+  "window_end": "2026-11-15T00:00:00+00:00",
+  "window_hours": 720.0,
+  "window_required_days": 30,
+  "window_sufficient": true,
+  "vehicles_in_fleet": 60,
+  "qualifying_denominator": 60,
+  "excluded_insufficient_coverage": 0,
+  "over_threshold": 7,
+  "fraction_over_threshold": 0.1167,
+  "maximum_allowed": 0.1,
+  "determination": "FAIL",
+  "reason": "7 of 60 qualifying vehicles idle beyond 120 h",
+  "enforcement_enabled": false
+ },
+ "run_b_real": {
+  "rule": "EC8 (report-card-2025)",
+  "window_start": "2026-11-14T13:09:43+00:00",
+  "window_end": "2026-11-15T21:26:44+00:00",
+  "window_hours": 32.3,
+  "window_required_days": 30,
+  "window_sufficient": false,
+  "vehicles_in_fleet": 4936,
+  "qualifying_denominator": 0,
+  "excluded_insufficient_coverage": 4936,
+  "over_threshold": 0,
+  "fraction_over_threshold": null,
+  "maximum_allowed": 0.1,
+  "determination": "NOT ASSESSABLE",
+  "reason": "no vehicle was observed across enough of the window to support a 120-hour finding",
+  "enforcement_enabled": false
+ }
+}

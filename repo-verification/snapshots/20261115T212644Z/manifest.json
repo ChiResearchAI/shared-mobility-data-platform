@@ -1,0 +1,97 @@
+{
+  "captured_at_utc": "2026-11-15T21:26:44.188362+00:00",
+  "snapshot_id": "20261115T212644Z",
+  "source_registry": "https://github.com/MobilityData/gbfs/blob/master/systems.csv",
+  "operators": {
+    "veo": {
+      "discovery_url": "https://cluster-prod.veoride.com/api/shares/name/cbs/gbfs",
+      "discovery_http_status": "200",
+      "feeds": {
+        "system_information": {
+          "url": "https://cluster-prod.veoride.com/api/shares/name/cbs/gbfs/system_information",
+          "http_status": "200",
+          "bytes": 509,
+          "sha256": "31250914ae55bcb4244f1d16e88c00a32e39ecea2ab18f72c0d9343797d1ba4e"
+        },
+        "free_bike_status": {
+          "url": "https://cluster-prod.veoride.com/api/shares/name/cbs/gbfs/free_bike_status",
+          "http_status": "200",
+          "bytes": 681359,
+          "sha256": "8de49ff65cf17355419decd6b26115da1a3c1819585ac02b66d0f116a579e2f5"
+        },
+        "vehicle_types": {
+          "url": "https://cluster-prod.veoride.com/api/shares/name/cbs/gbfs/vehicle_types",
+          "http_status": "200",
+          "bytes": 669,
+          "sha256": "c61f5ca8de9bc11019f96fb66c7dc8e76d6cb7a78221121c37b4722cd6b34fe0"
+        },
+        "system_pricing_plans": {
+          "url": "https://cluster-prod.veoride.com/api/shares/name/cbs/gbfs/system_pricing_plans",
+          "http_status": "200",
+          "bytes": 1559,
+          "sha256": "3f19e0bb27755b51a0c62874c6158c8d0264da4419f4c6dc86b81152a686b76e"
+        }
+      }
+    },
+    "spin": {
+      "discovery_url": "https://mds.bird.co/gbfs/v2/public/provider/spin/columbus/gbfs.json",
+      "discovery_http_status": "200",
+      "feeds": {
+        "free_bike_status": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/free_bike_status",
+          "http_status": "200",
+          "bytes": 246395,
+          "sha256": "95a980d386fb287406730fb074b9304ef5b3ed5b11115e6af329ae7c4806239d"
+        },
+        "gbfs_versions": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/gbfs_versions",
+          "http_status": "200",
+          "bytes": 173,
+          "sha256": "c64350fe6ba91af5b1b70cb70d9bcbe5baa1599e751be88f4437d9ecb1570284"
+        },
+        "geofencing_zones": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/geofencing_zones",
+          "http_status": "200",
+          "bytes": 129694,
+          "sha256": "aa26f0d5ecb60fc49f22f088fb514d9583c4643b0fd5a52666d7087fc83281ce"
+        },
+        "station_information": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/station_information",
+          "http_status": "200",
+          "bytes": 75,
+          "sha256": "bcbd3eedc5cdcc6f36ca068038fe7f1f266cb14a1c802e5f88314161cbcc5f29"
+        },
+        "station_status": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/station_status",
+          "http_status": "200",
+          "bytes": 75,
+          "sha256": "bcbd3eedc5cdcc6f36ca068038fe7f1f266cb14a1c802e5f88314161cbcc5f29"
+        },
+        "system_information": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/system_information",
+          "http_status": "200",
+          "bytes": 573,
+          "sha256": "894fca72b5a5a7ce4a43e61d984213cad161b481ae73d03e0eca94337ee1bad4"
+        },
+        "system_pricing_plans": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/system_pricing_plans",
+          "http_status": "200",
+          "bytes": 72,
+          "sha256": "c2a72350b2ce7bc66aa1365161430546768d12d39fe9ee6d14d6f507b16f7016"
+        },
+        "system_regions": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/system_regions",
+          "http_status": "200",
+          "bytes": 215,
+          "sha256": "10ccff0976397fce58691cd2742dfb5201977d1fce04b336c0935bf0e5457cc6"
+        },
+        "vehicle_types": {
+          "url": "https://gbfs.spin.pm/api/gbfs/v2_3/columbus/vehicle_types",
+          "http_status": "200",
+          "bytes": 364,
+          "sha256": "adbf9d46c7bde5519a9c88df5efa1a217e222dab1f2282c777cf6a04aa03afdf"
+        }
+      }
+    }
+  }
+}
